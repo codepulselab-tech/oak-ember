@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coffee, bakery, and brunch menu at Oak & Ember Cafe.">
+  <title>Menu | Oak & Ember</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">Oak &amp; Ember</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="menu.html" aria-current="page">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="reserve.html">Reserve</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Menu</h1>
+    <p class="lead">Filter by type. Prices are sample figures for this teaching demo.</p>
+
+    <div class="filters" role="group" aria-label="Menu filters">
+      <button type="button" class="filter is-active" data-filter="all">All</button>
+      <button type="button" class="filter" data-filter="coffee">Coffee</button>
+      <button type="button" class="filter" data-filter="bakery">Bakery</button>
+      <button type="button" class="filter" data-filter="brunch">Brunch</button>
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-item" data-category="coffee">
+        <img src="../assets/images/menu-espresso.jpeg" alt="Espresso">
+        <div>
+          <h2>Espresso</h2>
+          <p>Ember blend. Short and chocolatey.</p>
+          <p class="price">$3.50</p>
+        </div>
+      </article>
+      <article class="menu-item" data-category="coffee">
+        <img src="../assets/images/latte.jpeg" alt="Latte">
+        <div>
+          <h2>Latte</h2>
+          <p>Two shots, steamed milk. Oat available.</p>
+          <p class="price">$5.00</p>
+        </div>
+      </article>
+      <article class="menu-item" data-category="coffee">
+        <img src="../assets/images/menu-pour.jpeg" alt="Pour over">
+        <div>
+          <h2>Pour over</h2>
+          <p>Single origin, rotating weekly.</p>
+          <p class="price">$5.50</p>
+        </div>
+      </article>
+      <article class="menu-item" data-category="bakery">
+        <img src="../assets/images/about-roast.jpeg" alt="Cardamom bun">
+        <div>
+          <h2>Cardamom bun</h2>
+          <p>Butter, sugar, cracked cardamom.</p>
+          <p class="price">$4.25</p>
+        </div>
+      </article>
+      <article class="menu-item" data-category="bakery">
+        <img src="../assets/images/menu-loaf.png" alt="Sourdough loaf">
+        <div>
+          <h2>Sourdough loaf</h2>
+          <p>Baked at 6am. Limited loaves.</p>
+          <p class="price">$8.00</p>
+        </div>
+      </article>
+      <article class="menu-item" data-category="brunch">
+        <img src="../assets/images/brunch-plate.jpeg" alt="Eggs and greens">
+        <div>
+          <h2>Eggs &amp; greens</h2>
+          <p>Soft eggs, dressed leaves, toast.</p>
+          <p class="price">$14.00</p>
+        </div>
+      </article>
+      <article class="menu-item" data-category="brunch">
+        <img src="../assets/images/menu-granola.jpeg" alt="Yogurt and granola">
+        <div>
+          <h2>Yogurt bowl</h2>
+          <p>House granola, fruit, honey.</p>
+          <p class="price">$11.00</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Oak &amp; Ember. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
